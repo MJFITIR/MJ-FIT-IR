@@ -1,161 +1,227 @@
-<section class="services" id="services">
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap');
 
-<h5 class="section-subtitle">
-MY SERVICES
-</h5>
 
-<h2 class="section-title">
-What I Can Help You With
-</h2>
+*{
 
-<div class="services-container">
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Vazirmatn,sans-serif;
 
-<div class="service-card">
+}
 
-<i class="fa-solid fa-dumbbell"></i>
 
-<h3>Personal Training</h3>
 
-<p>
-Custom workout programs designed to help you build muscle, improve strength and achieve your fitness goals.
-</p>
+body{
 
-</div>
+background:
 
-<div class="service-card">
+linear-gradient(
+rgba(0,0,0,.75),
+rgba(0,0,0,.85)
+),
 
-<i class="fa-solid fa-heart-pulse"></i>
+url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e")
 
-<h3>Online Coaching</h3>
+center/cover fixed;
 
-<p>
-Professional online coaching with continuous support, progress tracking and personalized guidance.
-</p>
 
-</div>
+color:white;
 
-<div class="service-card">
+}
 
-<i class="fa-solid fa-utensils"></i>
 
-<h3>Nutrition Planning</h3>
 
-<p>
-Nutrition strategies created specifically for your body, lifestyle and personal goals.
-</p>
 
-</div>
+.glass{
 
-<div class="service-card">
+background:rgba(255,255,255,0.10);
 
-<i class="fa-solid fa-fire"></i>
+border:
+1px solid rgba(255,255,255,0.20);
 
-<h3>Body Transformation</h3>
+backdrop-filter:blur(15px);
 
-<p>
-Professional coaching for fat loss, muscle growth and complete body transformation.
-</p>
+border-radius:25px;
 
-</div>
+box-shadow:
+0 10px 40px rgba(0,0,0,.4);
 
-</div>
+}
 
-</section>
 
-<section class="philosophy">
 
-<h5 class="section-subtitle">
-MY PHILOSOPHY
-</h5>
 
-<h2 class="section-title">
-Discipline Creates Results
-</h2>
+header{
 
-<p class="philosophy-text">
+padding:20px;
 
-Success isn't built overnight.
+}
 
-Every workout, every healthy meal and every small improvement brings you one step closer to your goals.
 
-My coaching is based on discipline, consistency and sustainable progress.
 
-No shortcuts.
 
-No excuses.
+nav{
 
-Only real results.
+display:flex;
 
-</p>
+justify-content:space-between;
 
-</section>
+align-items:center;
 
-<section class="contact" id="contact">
+padding:20px 35px;
 
-<h5 class="section-subtitle">
-CONTACT
-</h5>
+}
 
-<h2 class="section-title">
-Let's Work Together
-</h2>
 
-<div class="contact-links">
 
-<a href="https://instagram.com/MJ.FIT.IR" target="_blank">
+nav a{
 
-<i class="fab fa-instagram"></i>
+color:white;
 
-<span>@MJ.FIT.IR</span>
+text-decoration:none;
 
-</a>
+margin:10px;
 
-<a href="https://wa.me/989931693826" target="_blank">
+}
 
-<i class="fab fa-whatsapp"></i>
 
-<span>WhatsApp</span>
 
-</a>
 
-<a href="tel:+989931693826">
+.hero{
 
-<i class="fa-solid fa-phone"></i>
+min-height:90vh;
 
-<span>+98 993 169 3826</span>
+display:flex;
 
-</a>
+justify-content:center;
 
-</div>
+align-items:center;
 
-</section>
+padding:30px;
 
-<footer>
+}
 
-<h2>MJ FIT IR</h2>
 
-<p>
 
-Elite Fitness Coach
 
-</p>
+.box{
 
-<p>
+max-width:800px;
 
-Train Hard • Stay Consistent • Become Unstoppable
+padding:40px;
 
-</p>
+text-align:center;
 
-<p>
+}
 
-© 2026 MJ FIT IR. All Rights Reserved.
 
-</p>
 
-</footer>
 
-<script src="script.js"></script>
+h1{
 
-</body>
+font-size:55px;
 
-</html>
+font-weight:900;
+
+}
+
+
+
+p{
+
+font-size:18px;
+
+line-height:2;
+
+margin:20px 0;
+
+}
+
+
+
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:white;
+
+color:black;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+
+
+
+section{
+
+padding:60px 30px;
+
+}
+
+
+
+
+.cards{
+
+display:flex;
+
+gap:25px;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+
+
+
+.card{
+
+width:300px;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+
+
+
+footer{
+
+text-align:center;
+
+padding:30px;
+
+}
+
+
+
+@media(max-width:700px){
+
+h1{
+
+font-size:35px;
+
+}
+
+
+nav{
+
+flex-direction:column;
+
+}
+
+  }
