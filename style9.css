@@ -1,0 +1,285 @@
+/* ==========================
+PREMIUM ANIMATIONS
+========================== */
+
+
+/* Fade Up Animation */
+
+.fade-up{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:1s ease;
+
+}
+
+
+.fade-up.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+
+/* Fade Left */
+
+.fade-left{
+
+opacity:0;
+
+transform:translateX(-50px);
+
+transition:1s ease;
+
+}
+
+
+.fade-left.show{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+
+
+/* Fade Right */
+
+.fade-right{
+
+opacity:0;
+
+transform:translateX(50px);
+
+transition:1s ease;
+
+}
+
+
+.fade-right.show{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+
+
+/* ==========================
+LOADING SCREEN
+========================== */
+
+
+.loader{
+
+position:fixed;
+
+inset:0;
+
+background:#000;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+z-index:9999;
+
+}
+
+
+
+.loader-logo{
+
+font-size:45px;
+
+font-weight:900;
+
+letter-spacing:4px;
+
+color:white;
+
+animation:pulse 1.5s infinite;
+
+}
+
+
+
+.loader-logo span{
+
+color:var(--primary);
+
+}
+
+
+
+@keyframes pulse{
+
+0%{
+
+opacity:.4;
+
+transform:scale(.95);
+
+}
+
+
+50%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+
+100%{
+
+opacity:.4;
+
+transform:scale(.95);
+
+}
+
+
+}
+
+
+
+/* ==========================
+GOLD TEXT EFFECT
+========================== */
+
+
+.gold-text{
+
+background:linear-gradient(
+90deg,
+#D4AF37,
+#fff0a8,
+#D4AF37
+);
+
+background-size:200% auto;
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+animation:goldMove 3s linear infinite;
+
+}
+
+
+
+@keyframes goldMove{
+
+
+to{
+
+background-position:200% center;
+
+}
+
+
+}
+
+
+
+/* ==========================
+IMAGE HOVER PREMIUM
+========================== */
+
+
+.image-hover{
+
+overflow:hidden;
+
+border-radius:25px;
+
+}
+
+
+
+.image-hover img{
+
+transition:.6s;
+
+}
+
+
+
+.image-hover:hover img{
+
+transform:scale(1.08);
+
+}
+
+
+
+/* ==========================
+GOLD BORDER EFFECT
+========================== */
+
+
+.gold-border{
+
+position:relative;
+
+}
+
+
+
+.gold-border::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+border-radius:inherit;
+
+padding:1px;
+
+background:linear-gradient(
+45deg,
+transparent,
+var(--primary),
+transparent
+);
+
+-webkit-mask:
+linear-gradient(#fff 0 0) content-box,
+linear-gradient(#fff 0 0);
+
+-webkit-mask-composite:xor;
+
+mask-composite:exclude;
+
+}
+
+
+
+/* ==========================
+BACKGROUND EFFECTS
+========================== */
+
+
+.background-glow{
+
+position:absolute;
+
+width:400px;
+
+height:400px;
+
+background:
