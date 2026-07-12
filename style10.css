@@ -1,0 +1,392 @@
+/* =====================================
+   MJ FIT IR
+   FINAL CSS OPTIMIZATION
+====================================== */
+
+
+/* ==========================
+UTILITY CLASSES
+========================== */
+
+
+.text-center{
+
+text-align:center;
+
+}
+
+
+
+.text-gold{
+
+color:var(--primary);
+
+}
+
+
+
+.mt-20{
+
+margin-top:20px;
+
+}
+
+
+
+.mt-40{
+
+margin-top:40px;
+
+}
+
+
+
+.mb-20{
+
+margin-bottom:20px;
+
+}
+
+
+
+.mb-40{
+
+margin-bottom:40px;
+
+}
+
+
+
+.flex{
+
+display:flex;
+
+}
+
+
+
+.align-center{
+
+align-items:center;
+
+}
+
+
+
+.justify-center{
+
+justify-content:center;
+
+}
+
+
+
+.hidden{
+
+display:none;
+
+}
+
+
+
+/* ==========================
+BUTTON PREMIUM STYLE
+========================== */
+
+
+.btn-premium{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+padding:17px 45px;
+
+border-radius:50px;
+
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--secondary)
+);
+
+color:#000;
+
+font-weight:800;
+
+transition:.4s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+.btn-premium::before{
+
+content:"";
+
+position:absolute;
+
+width:0;
+
+height:100%;
+
+left:0;
+
+top:0;
+
+background:rgba(255,255,255,.25);
+
+transition:.4s;
+
+}
+
+
+
+.btn-premium:hover::before{
+
+width:100%;
+
+}
+
+
+
+.btn-premium:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 20px 40px rgba(212,175,55,.35);
+
+}
+
+
+
+/* ==========================
+SECTION DIVIDER
+========================== */
+
+
+.divider{
+
+width:80px;
+
+height:4px;
+
+background:var(--primary);
+
+margin:20px auto 40px;
+
+border-radius:20px;
+
+}
+
+
+
+/* ==========================
+VIDEO / FEATURE AREA
+========================== */
+
+
+.video-box{
+
+position:relative;
+
+overflow:hidden;
+
+border-radius:30px;
+
+}
+
+
+
+.video-box img{
+
+width:100%;
+
+transition:.5s;
+
+}
+
+
+
+.video-box:hover img{
+
+transform:scale(1.05);
+
+}
+
+
+
+.play-button{
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:80px;
+
+height:80px;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:#000;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:30px;
+
+font-weight:bold;
+
+}
+
+
+
+/* ==========================
+NAVBAR SCROLL EFFECT
+========================== */
+
+
+header.scrolled{
+
+background:#050505;
+
+box-shadow:0 10px 30px rgba(0,0,0,.5);
+
+}
+
+
+
+/* ==========================
+NO SELECT / CLEAN UI
+========================== */
+
+
+button,
+a{
+
+-webkit-tap-highlight-color:transparent;
+
+}
+
+
+
+::selection{
+
+background:var(--primary);
+
+color:#000;
+
+}
+
+
+
+/* ==========================
+ACCESSIBILITY
+========================== */
+
+
+:focus-visible{
+
+outline:2px solid var(--primary);
+
+outline-offset:4px;
+
+}
+
+
+
+/* ==========================
+PRINT FIX
+========================== */
+
+
+@media print{
+
+
+header,
+footer,
+.btn,
+.scroll-top{
+
+display:none;
+
+}
+
+
+body{
+
+background:white;
+
+color:black;
+
+}
+
+
+}
+
+
+
+/* ==========================
+ULTIMATE MOBILE FIX
+========================== */
+
+
+@media(max-width:480px){
+
+
+.container{
+
+width:92%;
+
+}
+
+
+.hero-content h1{
+
+font-size:36px;
+
+}
+
+
+.hero-content h2{
+
+font-size:21px;
+
+}
+
+
+.section-header h2{
+
+font-size:30px;
+
+}
+
+
+.service-card,
+.price-card,
+.testimonial,
+.contact-form{
+
+border-radius:20px;
+
+}
+
+
+       }
