@@ -1,29 +1,29 @@
-
-// MJ FIT Website Effects
-
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function(){
 
 
-const items = document.querySelectorAll(".glass");
+const elements = document.querySelectorAll(".glass");
 
 
-items.forEach((item) => {
-
-item.style.opacity = "0";
-
-item.style.transform = "translateY(30px)";
+elements.forEach((element, index)=>{
 
 
-setTimeout(() => {
+element.style.opacity = "0";
 
-item.style.transition = "0.8s ease";
-
-item.style.opacity = "1";
-
-item.style.transform = "translateY(0)";
+element.style.transform = "translateY(40px)";
 
 
-},300);
+setTimeout(()=>{
+
+
+element.style.transition = "all 0.8s ease";
+
+element.style.opacity = "1";
+
+element.style.transform = "translateY(0)";
+
+
+}, index * 200);
+
 
 
 });
